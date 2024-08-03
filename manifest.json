@@ -1,0 +1,19 @@
+{
+   "manifest_version": 3,
+   "name": "NDT",
+   "description": "No Disney Tooltip: Remove Disney+'s tooltip \"Your video will continue from this point after the break\" when blocking ads.",
+   "version": "0.0.1",
+   "icons": {
+      "128": "icon.png"
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "content_script.js"
+         ],
+         "matches": [
+            "https://www.dysneyplus.com/*"
+         ]
+      }
+   ]
+}
